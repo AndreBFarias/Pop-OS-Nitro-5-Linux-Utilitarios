@@ -1,62 +1,63 @@
 # Pop-OS-Nitro-5-Linux-Utilitarios
 
-Uma coleção de scripts `.sh` e feitiços digitais para resolver problemas pontuais (e alguns nem tão pontuais assim) no Pop!_OS, com um carinho especial para os sofredores que, como eu, possuem um Acer Nitro 5.
+Fui juntando aqui uns scripts `.sh` que criei ou adaptei pra resolver umas dores de cabeça no Pop!_OS (qualquer outra distro linux passou pelo), principalmente as que tive com meu Acer Nitro 5.
 
-Use da forma que quiser. Várias dessas soluções foram criadas na base do ódio e da pesquisa em fóruns obscuros, então creio que possam ajudar a poupar sua sanidade.
+Estou deixando tudo aqui porque, honestamente, não achei solução pra várias dessas coisas no GitHub e, se isso poupar algumas horas de raiva de alguém, já valeu a pena. Use como quiser.
 
 ---
 
-### Kit de Sobrevivência (Reparo e Soluções Críticas)
+### Os Scripts (A caixa de ferramentas)
 
 > ### `reparo_completo_sistema.sh`
-> O botão de pânico nuclear. Para quando tudo mais falhou e você está a um passo de formatar o PC e instalar o Windows de volta. Este ritual de reparo profundo faz uma limpeza radical, reinstala drivers, pacotes essenciais, corrige dependências e tenta trazer seu Pop!_OS de volta do além. Use como último recurso e com fé.
+> Esse aqui é o meu "botão nuclear", o último recurso antes de jogar tudo pro alto e formatar. É um script meio bruto que tenta de tudo um pouco: limpa o sistema, reinstala um monte de coisa essencial, mexe nos drivers..., o famoso "reza e vai". Use por sua conta e risco, mas já me salvou uma vez(acho).
 
 > ### `aplicador_solucoes_nitro5.sh`
-> O canivete suíço para qualquer dono de um Acer Nitro 5 no Linux. Ele corrige o controle de brilho que não funciona, ressuscita suas portas USB que morrem do nada, cria a entrada de boot do Windows que o Pop!_OS esqueceu de fazer, e de quebra ainda dá um jeito no Spotify pra você usar o Spicetify. Use e sinta a paz que a Acer não te deu.
+> Esse virou meu "kit de sobrevivência" pro Nitro 5. Juntei nele um monte de correção que precisei fazer: o ajuste do brilho, a gambiarra pra USB não morrer do nada, o jeito de criar a entrada de boot do Windows... Até a configuração pra fazer o Spicetify funcionar direito tá aí. Basicamente, a paz que a Acer não me deu.
 
 > ### `restaurador_audio_pipewire.sh`
-> Serve exatamente pra isso: arrumar os drivers de som. Ele exorciza os espectros ectoplásmicos que fazem seu microfone soar como se estivesse dentro de uma garrafa, impede que as ventoinhas do notebook façam cosplay de um tufão na sua chamada e coloca o PipeWire de volta no seu devido lugar.
-
-### Diagnóstico e Inventário
-
-> ### `coletor_geral_logs.sh`
-> Quando seu sistema está com uma doença misteriosa e você precisa levá-lo no "Dr. House" de algum fórum gringo. Este script funciona como uma ressonância magnética: ele coleta absolutamente TUDO sobre seu sistema e organiza numa pasta pra você poder enviar pra quem entende do assunto (ou fingir que entende).
-
-> ### `diagnostico_focado_erros.sh`
-> Se o coletor geral é uma ressonância magnética, este aqui é o termômetro. Ele faz uma varredura rápida e focada nos pontos vitais: erros de boot, serviços que falharam, problemas no servidor gráfico... Perfeito pra ter uma ideia do tamanho do estrago sem se afogar em mil linhas de log.
-
-> ### `gerador_inventario_software.sh`
-> Você sequer lembra de tudo que já instalou nessa máquina desde 2018? Este é o "Inquisidor". Ele vasculha seu sistema em busca não só dos pacotes oficiais (APT, Flatpak, Snap), mas também de AppImages perdidas e programas instalados na mão. Descubra os fantasmas que habitam seu disco rígido.
-
-> ### `verificador_integridade_pre-boot.sh`
-> Fez uma alteração crítica no sistema e agora está com medo de reiniciar? Este é o seu "amuleto de proteção". Ele faz uma checagem final nos componentes vitais do boot e da interface gráfica pra te dar um pingo a mais de confiança antes de apertar o botão de "reiniciar" e começar a rezar.
-
-### Utilitários de Sistema e Arquivos
+> Meu microfone de repente começou a soar como se eu estivesse falando de dentro de uma garrafa, com um eco bizarro e captando até a ventoinha do notebook. Esse script foi o que resolveu. Ele basicamente reseta as configurações do PipeWire e reinstala as coisas no lugar. Foi o que exorcizou os espectros ectoplásmicos do meu áudio.
 
 > ### `arquiteto_de_diretorios.sh`
-> Sua pasta de "Downloads" parece uma zona de guerra? Este é o arquiteto que vai trazer ordem ao caos. É um assistente interativo que te ajuda a organizar tudo em pastas bonitinhas. O melhor de tudo? Ele tem um modo de simulação pra você ver o resultado antes de mover qualquer coisa e um gerenciador de duplicatas que usa a lixeira. À prova de leigos e de arrependimentos.
+> Minha pasta de "Downloads" era uma zona de guerra. Criei esse "arquiteto" pra dar um jeito na bagunça. É um assistente com menu que te ajuda a organizar as coisas, e o melhor é que ele pode só "simular" primeiro, te mostrando o que faria, sem mover nada. Fiz ele ser à prova de gente apressada (eu).
+
+> ### `coletor_geral_logs.sh`
+> Usei esse quando precisei pedir ajuda num fórum gringo e me pediram "os logs". Em vez de ficar caçando, esse script funciona como uma ressonância magnética: coleta uma quantidade absurda de logs do sistema e joga tudo numa pasta. Daí é só compactar e mandar pra quem manja.
+
+> ### `diagnostico_focado_erros.sh`
+> Diferente do de cima, que pega tudo, este aqui é o "termômetro". Ele só busca os problemas óbvios e os erros mais comuns nos logs. É bom pra ter uma noção rápida do tamanho do estrago sem precisar ler um livro de logs.
+
+> ### `gerador_inventario_software.sh`
+> Eu honestamente não lembrava nem metade das coisas que tinha instalado, especialmente AppImages e uns trecos que compilei na mão anos atrás. Por isso fiz o "Inquisidor". Ele só... uh... vasculha tudo e lista o que encontra, dos pacotes normais até esses fantasmas esquecidos no HD.
+
+> ### `verificador_integridade_pre-boot.sh`
+> Sabe aquele suor frio que desce depois de mexer num arquivo de configuração importante e ter que reiniciar? Criei esse "amuleto" pra esses momentos. Ele só dá uma checada geral nas coisas vitais do boot pra ver se a chance de dar BO é grande ou pequena.
 
 > ### `backup_particao_efi.sh`
-> A partição EFI é o porteiro do seu sistema. Se ele sumir, você não entra. Este script é sua apólice de seguro digital: ele cria um backup versionado do porteiro e de todas as chaves dele. Reze pra nunca precisar usar, mas tenha-o sempre por perto.
+> A partição EFI é o que deixa seu computador ligar, basicamente. Se ela corromper, já era. Esse script é só uma apólice de seguro que faz um backup dela. Tomara que você nunca precise restaurar, mas é bom ter.
 
 > ### `exportador_lista_pacotes.sh`
-> Vai formatar ou quer replicar seu ambiente em outra máquina? Este script é o "cartório" do seu sistema. Ele gera um manifesto completo de tudo que você tem instalado via APT, Flatpak e Snap. Praticamente uma certidão de nascimento do seu setup para facilitar futuras reinstalações.
+> Pra quando eu decido formatar ou quero montar um sistema parecido em outra máquina. Ele basicamente cria uma "lista de compras" de tudo que tá instalado via APT, Flatpak e Snap, pra facilitar a vida depois.
 
 > ### `removedor_seguro_diretorio.sh`
-> Para aquele momento de "tenho certeza que posso apagar isso... eu acho". Em vez de usar o `rm -rf` e se arrepender para sempre, este script (que serve como um modelo) move o diretório alvo para a lixeira do sistema. Te dá a satisfação da limpeza com a segurança de poder voltar atrás.
-
-### Customização e Estética
+> Fiz esse mais como um modelo, praquele momento de "posso apagar isso... eu acho". Em vez de dar um `rm -rf` e chorar depois, ele usa o `gio trash`, que manda as coisas pra lixeira normal do sistema. Limpeza com botão de "desfazer".
 
 > ### `unificador_temas_dracula.sh`
-> Você instala seu tema gótico trevoso favorito, e os apps em Flatpak continuam parecendo o Windows 95. Este feitiço de unificação força TODO o sistema a obedecer sua escolha estética, aplicando o tema de ícones, cursor e GTK até na alma dos Flatpaks rebeldes.
+> Eu ficava maluco quando instalava um tema legal e os aplicativos em Flatpak continuavam com a cara do Windows 95. Esse script força todo mundo a usar o mesmo tema GTK, de ícones e de cursor. Sem mais apps rebeldes.
 
 > ### `instalador_extensoes_gnome.sh`
-> Deixar o GNOME puro é como comer arroz sem feijão: funciona, mas falta alma. Este script instala uma lista curada de extensões essenciais (a maioria do próprio Pop!_OS) de uma só vez, pra deixar seu desktop funcional e bonito sem precisar peregrinar pelo site do GNOME.
+> Preguiça de ficar caçando e instalando extensão do GNOME uma por uma. Joguei os IDs das que eu mais uso aqui e ele instala tudo de uma vez.
 
 > ### `ajuste_backlight_acpi.sh`
-> Sabe quando o controle de brilho do seu notebook resolve tirar férias e te deixa no escuro (ou cego)? Este script dá um tapa no ACPI e o força a usar o modo 'native', que geralmente resolve o problema de uma vez por todas. Seus olhos agradecem.
+> O controle de brilho do meu notebook simplesmente parou de funcionar. Depois de muito procurar, descobri que forçar o modo "native" do ACPI resolvia. É só isso que esse script faz.
+
+> ### `aoraculo_do_kernel.sh`
+> Mexer nos parâmetros de boot do kernel é como fazer uma cirurgia de coração aberto no seu sistema. Um erro e... bem, você já sabe. Criei o "Oráculo" pra ser o meu "cirurgião assistente". Primeiro, ele faz um diagnóstico completo, te mostrando as opções de boot que você tem agora. Depois, ele te mostra uma lista de parâmetros otimizados (já corrigi uns conflitos que eu mesmo tinha criado) e, só depois de você olhar pra tudo e concordar, ele aplica as mudanças. É o jeito mais seguro que encontrei de fazer essa operação de alto risco.
 
 ---
 
 Se gostar de algo, deixa uma estrela aí. Cada script desses tem umas boas horas de pesquisa e raiva investidas, como se eu fosse um engenheiro da Acer tentando consertar os próprios produtos, mas sem receber nada em troca. =D
+<<<<<<< HEAD
+=======
 
+
+>>>>>>> bc75addde714d75c056fd581107a8a99783521d7
