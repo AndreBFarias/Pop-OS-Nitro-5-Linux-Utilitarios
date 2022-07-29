@@ -53,6 +53,9 @@ Estou deixando tudo aqui porque, honestamente, não achei solução pra várias 
 > ### `oraculo_do_kernel.sh`
 > Mexer nos parâmetros de boot do kernel é como fazer uma cirurgia de coração aberto no seu sistema. Um erro e... bem, você já sabe. Criei o "Oráculo" pra ser o meu "cirurgião assistente". Primeiro, ele faz um diagnóstico completo, te mostrando as opções de boot que você tem agora. Depois, ele te mostra uma lista de parâmetros otimizados (já corrigi uns conflitos que eu mesmo tinha criado) e, só depois de você olhar pra tudo e concordar, ele aplica as mudanças. É o jeito mais seguro que encontrei de fazer essa operação de alto risco.
 
+> ### `Dracula-Theme-GTK` 
+>Versão modificada do tema gtk drácula, o diferencial foi mexer na questão da transparência na top bar, estetizar a dock e fazer com que ele não entrasse em conflito com as demais extensões que eu tenho.
+
 > ### `Dracula-Theme-OnlyOffice` 
 >Também coloquei um tema que fiz pro programa only office, seguindo a paleta do Dracula.
 ---
