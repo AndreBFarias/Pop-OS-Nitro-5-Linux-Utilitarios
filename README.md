@@ -3,7 +3,10 @@
 [![Estrelas](https://img.shields.io/github/stars/AndreBFarias/Pop-OS-Nitro-5-Linux-Utilitarios.svg?style=social)](https://github.com/AndreBFarias/Pop-OS-Nitro-5-Linux-Utilitarios/stargazers)
 [![Contribuições](https://img.shields.io/badge/contribuições-bem--vindas-brightgreen.svg)](https://github.com/AndreBFarias/Pop-OS-Nitro-5-Linux-Utilitarios/issues)
 
-# Pop-OS-Nitro-5-Linux-Utilitarios
+<div style="text-align: center;">
+  <h1 style="font-size: 2em;">Pop-OS-Nitro-5-Linux-Utilitarios</h1>
+  <img src="assets/acer-nitro.png" width="400" alt="Logo Acer Nitro">
+</div>
 
 Fui juntando aqui uns scripts `.sh` que criei ou adaptei pra resolver umas dores de cabeça no Pop!_OS (qualquer outra distro linux passou pelo), principalmente as que tive com meu Acer Nitro 5.
 
