@@ -1,13 +1,17 @@
-<div style="text-align: center;">
-  <h1 style="font-size: 2em;">Pop-OS-Nitro-5-Linux-Utilitarios</h1>
-  <img src="assets/acer-nitro.png" width="400" alt="Logo Acer Nitro" text-align="center">
-</div>
 
 [![Licença](https://img.shields.io/badge/licença-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Shell](https://img.shields.io/badge/shell-bash-green.svg)](https://www.gnu.org/software/bash/)
 [![Estrelas](https://img.shields.io/github/stars/AndreBFarias/Pop-OS-Nitro-5-Linux-Utilitarios.svg?style=social)](https://github.com/AndreBFarias/Pop-OS-Nitro-5-Linux-Utilitarios/stargazers)
 [![Contribuições](https://img.shields.io/badge/contribuições-bem--vindas-brightgreen.svg)](https://github.com/AndreBFarias/Pop-OS-Nitro-5-Linux-Utilitarios/issues)
 
+<br>
+<div style="text-align: center;">
+  <h1 style="font-size: 2em;">Pop-OS-Nitro-5-Linux-Utilitarios</h1>
+  <br> <img src="assets/acer-nitro.png" width="400" alt="Logo Acer Nitro" text-align="center">
+</div>
+
+
+<br>
 Fui juntando aqui uns scripts `.sh` que criei ou adaptei pra resolver umas dores de cabeça no Pop!_OS (qualquer outra distro linux passou pelo), principalmente as que tive com meu Acer Nitro 5.
 
 Estou deixando tudo aqui porque, honestamente, não achei solução pra várias dessas coisas no GitHub e, se isso poupar algumas horas de raiva de alguém, já valeu a pena. Use como quiser.
