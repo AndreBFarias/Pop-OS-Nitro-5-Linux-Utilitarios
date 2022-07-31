@@ -103,6 +103,12 @@ Link: [src/dracula-theme-gtk-pop-os.css](src/dracula-theme-gtk-pop-os.css)
 Link: [src/dracula_only_office.json](src/dracula_only_office.json)
 
 >Também coloquei um tema que fiz pro programa only office, seguindo a paleta do Dracula.
+
+> ### `ritual_de_harmonia` 
+Link: [src/> ### `ritual_de_harmonia.sh`](src/ritual_de_harmonia.sh)
+
+Script para unificar a aparência do Pop!_OS (impedir intriga entre programas Nativos e Flatpak) e resolver conflitos de atalho para aplicativos como Ulauncher.
+
 ---
 
 Se gostar de algo, deixa uma estrela aí. Cada script desses tem umas boas horas de pesquisa e raiva investidas, como se eu fosse um engenheiro da Acer tentando consertar os próprios produtos, mas sem receber nada em troca. =D
