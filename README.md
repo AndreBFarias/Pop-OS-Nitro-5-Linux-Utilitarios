@@ -110,7 +110,7 @@ Link: [src/>ritual_de_harmonia.sh](src/ritual_de_harmonia.sh)
 >Script para unificar a aparência do Pop!_OS (impedir intriga entre programas Nativos e Flatpak) e resolver conflitos de atalho para aplicativos como Ulauncher.
 > ### `instalador_zsh.sh`
 
-Link: [src/instalador_zsh.sh](https://www.google.com/search?q=src/instalador_zsh.sh)
+Link: [src/instalador_zsh.sh]([https://www.google.com/search?q=src/instalador_zsh.sh](https://github.com/AndreBFarias/Pop-OS-Nitro-5-Linux-Utilitarios/blob/main/src/instalador_zsh.sh))
 
 > Este é o feitiço que transforma o terminal do sistema, substituindo o Bash pelo Zsh e instalando um ambiente completo e esteticamente aprimorado com tema `agnoster`, auto-sugestões e navegação inteligente. Ele configura tudo automaticamente.
 
