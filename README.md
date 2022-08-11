@@ -109,8 +109,6 @@ Link: [src/>ritual_de_harmonia.sh](src/ritual_de_harmonia.sh)
 
 >Script para unificar a aparência do Pop!_OS (impedir intriga entre programas Nativos e Flatpak) e resolver conflitos de atalho para aplicativos como Ulauncher.
 > ### `instalador_zsh.sh`
-
->
 Link: [src/instalador_zsh.sh](https://github.com/AndreBFarias/Pop-OS-Nitro-5-Linux-Utilitarios/blob/main/src/instalador_zsh.sh)
 
 > Este é o feitiço que transforma o terminal do sistema, substituindo o Bash pelo Zsh e instalando um ambiente completo e esteticamente aprimorado com tema `agnoster`, auto-sugestões e navegação inteligente. Ele configura tudo automaticamente.
@@ -128,29 +126,24 @@ Link: [src/create_penpot_launcher.sh](src/create_penpot_launcher.sh)
 
 > ### `font_config.py`
 Link: [src/font_config.py](src/font_config.py)
----
-Define configurações de fontes personalizadas (Fira Code Nerd Font, Roboto Slab e Fira Sans SemiBold) para o sistema. O script cria um arquivo `.conf` na pasta do usuário e atualiza o cache de fontes.
+>Define configurações de fontes personalizadas (Fira Code Nerd Font, Roboto Slab e Fira Sans SemiBold) para o sistema. O script cria um arquivo `.conf` na pasta do usuário e atualiza o cache de fontes.
 
 > ### `guardiao_da_memoria.sh`
 Link: [src/guardiao_da_memoria.sh](src/guardiao_da_memoria.sh)
----
-Automatiza a instalação e configuração do serviço `earlyoom`, um daemon de monitoramento de memória. Seu propósito é prevenir o congelamento do sistema quando a memória RAM atinge um nível crítico, encerrando processos que consomem muita memória.
+>Automatiza a instalação e configuração do serviço `earlyoom`, um daemon de monitoramento de memória. Seu propósito é prevenir o congelamento do sistema quando a memória RAM atinge um nível crítico, encerrando processos que consomem muita memória.
 
 > ### `sentinela_da_paz.sh`
 Link: [src/sentinela_da_paz.sh](src/sentinela_da_paz.sh)
----
-Um script de startup para forçar a GPU NVIDIA a operar em modo de alto desempenho e garantir que o perfil de energia do sistema permaneça em modo `performance`, resolvendo problemas de performance e estabilidade.
+>Um script de startup para forçar a GPU NVIDIA a operar em modo de alto desempenho e garantir que o perfil de energia do sistema permaneça em modo `performance`, resolvendo problemas de performance e estabilidade.
 
 > ### `weylus.sh`
 Link: [src/weylus.sh](src/weylus.sh)
----
-Automatiza a instalação do `Weylus` e do `Input Remapper` para configurar um tablet como uma extensão de tela e mesa digitalizadora.
+>Automatiza a instalação do `Weylus` e do `Input Remapper` para configurar um tablet como uma extensão de tela e mesa digitalizadora.
 
 
 > ### `instalador_boxbuddy.sh`
 Link: [src/instalador_boxbuddy.sh](src/instalador_boxbuddy.sh)
----
-Automatiza a instalação e configuração do BoxBuddy, uma interface gráfica para o Distrobox. Ele instala as dependências necessárias, configura permissões de acesso ao sistema de arquivos para que o aplicativo possa gerenciar ambientes de desenvolvimento isolados.
+>Automatiza a instalação e configuração do BoxBuddy, uma interface gráfica para o Distrobox. Ele instala as dependências necessárias, configura permissões de acesso ao sistema de arquivos para que o aplicativo possa gerenciar ambientes de desenvolvimento isolados.
 ---
 
 Se gostar de algo, deixa uma estrela aí. Cada script desses tem umas boas horas de pesquisa e raiva investidas, como se eu fosse um engenheiro da Acer tentando consertar os próprios produtos, mas sem receber nada em troca. =D
