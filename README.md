@@ -1,4 +1,4 @@
-[![Licença](https://img.shields.io/badge/licença-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Licença](https://img.shields.io/badge/licença-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Shell](https://img.shields.io/badge/shell-bash-green.svg)](https://www.gnu.org/software/bash/)
 [![Estrelas](https://img.shields.io/github/stars/AndreBFarias/Pop-OS-Nitro-5-Linux-Utilitarios.svg?style=social)](https://github.com/AndreBFarias/Pop-OS-Nitro-5-Linux-Utilitarios/stargazers)
 [![Contribuições](https://img.shields.io/badge/contribuições-bem--vindas-brightgreen.svg)](https://github.com/AndreBFarias/Pop-OS-Nitro-5-Linux-Utilitarios/issues)
