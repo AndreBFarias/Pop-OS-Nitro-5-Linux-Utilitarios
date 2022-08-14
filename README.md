@@ -1,17 +1,13 @@
-<div align="center">
-
 [![Licença](https://img.shields.io/badge/licença-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Shell](https://img.shields.io/badge/shell-bash-green.svg)](https://www.gnu.org/software/bash/)
 [![Estrelas](https://img.shields.io/github/stars/AndreBFarias/Pop-OS-Nitro-5-Linux-Utilitarios.svg?style=social)](https://github.com/AndreBFarias/Pop-OS-Nitro-5-Linux-Utilitarios/stargazers)
 [![Contribuições](https://img.shields.io/badge/contribuições-bem--vindas-brightgreen.svg)](https://github.com/AndreBFarias/Pop-OS-Nitro-5-Linux-Utilitarios/issues)
-</div>
-<div align="center">
-  <h1 style="font-size: 2em;">Pop-OS-Nitro-5-Linux-Utilitarios</h1>
-  <br> 
+
+# Pop-OS-Nitro-5-Linux-Utilitarios
+
 <p align="center">
     <img src="https://raw.githubusercontent.com/AndreBFarias/Pop-OS-Nitro-5-Linux-Utilitarios/main/assets/acer-nitro.png" alt="Logo Acer Nitro" width="22%">
-</p></div>
-
+</p>
 <br>
 Fui juntando aqui uns scripts `.sh` que criei ou adaptei pra resolver umas dores de cabeça no Pop!_OS (qualquer outra distro linux passou pelo), principalmente as que tive com meu Acer Nitro 5.
 
@@ -95,17 +91,17 @@ Link: [src/oraculo_do_kernel.sh](src/oraculo_do_kernel.sh)
 
 > Mexer nos parâmetros de boot do kernel é como fazer uma cirurgia de coração aberto no seu sistema. Um erro e... bem, você já sabe. Criei o "Oráculo" pra ser o meu "cirurgião assistente". Primeiro, ele faz um diagnóstico completo, te mostrando as opções de boot que você tem agora. Depois, ele te mostra uma lista de parâmetros otimizados (já corrigi uns conflitos que eu mesmo tinha criado) e, só depois de você olhar pra tudo e concordar, ele aplica as mudanças. É o jeito mais seguro que encontrei de fazer essa operação de alto risco.
 
-> ### `Dracula-Theme-GTK` 
+> ### `Dracula-Theme-GTK`
 Link: [src/dracula-theme-gtk-pop-os.css](src/dracula-theme-gtk-pop-os.css)
 
 >Versão modificada do tema gtk drácula, o diferencial foi mexer na questão da transparência na top bar, estetizar a dock e fazer com que ele não entrasse em conflito com as demais extensões que eu tenho.
 
-> ### `Dracula-Theme-OnlyOffice` 
+> ### `Dracula-Theme-OnlyOffice`
 Link: [src/dracula_only_office.json](src/dracula_only_office.json)
 
 >Também coloquei um tema que fiz pro programa only office, seguindo a paleta do Dracula.
 
-> ### `ritual_de_harmonia` 
+> ### `ritual_de_harmonia`
 Link: [src/>ritual_de_harmonia.sh](src/ritual_de_harmonia.sh)
 
 >Script para unificar a aparência do Pop!_OS (impedir intriga entre programas Nativos e Flatpak) e resolver conflitos de atalho para aplicativos como Ulauncher.
