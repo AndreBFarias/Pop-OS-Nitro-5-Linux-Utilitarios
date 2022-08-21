@@ -15,6 +15,13 @@ Estou deixando tudo aqui porque, honestamente, não achei solução pra várias 
 
 ---
 
+## Requisitos
+
+- Linux (testado no Pop!_OS 22.04 e Ubuntu 22.04+)
+- Bash 5.0 ou superior
+- Privilégios de superusuário para scripts de sistema
+- Dependências específicas por script (listadas em cada descrição)
+
 ### Os Scripts (A caixa de ferramentas)
 > ### `reparo_completo_sistema.sh`
 Link: [src/reparo_completo_sistema.sh](src/reparo_completo_sistema.sh)
