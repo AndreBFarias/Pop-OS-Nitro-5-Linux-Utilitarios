@@ -8,6 +8,7 @@
 <p align="center">
     <img src="https://raw.githubusercontent.com/AndreBFarias/Pop-OS-Nitro-5-Linux-Utilitarios/main/assets/acer-nitro.png" alt="Logo Acer Nitro" width="22%">
 </p>
+
 <br>
 Fui juntando aqui uns scripts `.sh` que criei ou adaptei pra resolver umas dores de cabeça no Pop!_OS (qualquer outra distro linux passou pelo), principalmente as que tive com meu Acer Nitro 5.
 
@@ -152,5 +153,5 @@ Link: [src/instalador_boxbuddy.sh](src/instalador_boxbuddy.sh)
 
 Se gostar de algo, deixa uma estrela aí. Cada script desses tem umas boas horas de pesquisa e raiva investidas, como se eu fosse um engenheiro da Acer tentando consertar os próprios produtos, mas sem receber nada em troca. =D
 
-### Licença GLP
+### Licença GPLv3
 Livre para modificar e usar da forma que preferir desde que tudo permaneça livre.
