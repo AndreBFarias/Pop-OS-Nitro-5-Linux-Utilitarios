@@ -59,5 +59,4 @@ Use da forma que quiser. Várias dessas soluções foram criadas na base do ódi
 ---
 
 Se gostar de algo, deixa uma estrela aí. Cada script desses tem umas boas horas de pesquisa e raiva investidas, como se eu fosse um engenheiro da Acer tentando consertar os próprios produtos, mas sem receber nada em troca. =D
-EOF
 
