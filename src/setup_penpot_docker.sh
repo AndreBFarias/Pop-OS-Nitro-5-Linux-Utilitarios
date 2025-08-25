@@ -62,4 +62,3 @@ echo -e "Sua instância local do Penpot está disponível em: ${YELLOW}http://lo
 echo -e "O primeiro usuário a se registrar será o administrador."
 echo -e "\n${YELLOW}AÇÃO RECOMENDADA: Reinicie a sessão (Logout/Login) para que a permissão do Docker seja aplicada permanentemente.${NC}"
 
-S
