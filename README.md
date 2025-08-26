@@ -118,6 +118,13 @@ Link: [src/instalador_zsh.sh](https://github.com/AndreBFarias/Pop-OS-Nitro-5-Lin
 Link: [src/setup_penpot_docker.sh](src/setup_penpot_docker.sh)
 
 > Script de pós-instalação para provisionar uma instância local da ferramenta de design e prototipagem Penpot, via Docker, no Pop!_OS. Ele automatiza todo o processo, desde a instalação e configuração do Docker e Docker Compose até o download e patch do arquivo de configuração do Penpot, garantindo uma instalação robusta e funcional com um único comando.
+
+> ### `create_penpot_launcher.sh`
+Link: [src/create_penpot_launcher.sh](src/create_penpot_launcher.sh)
+
+> Um script de conveniência para ser executado após a instalação do Penpot com Docker. Ele cria uma integração completa com o desktop, gerando automaticamente:
+> 1.  Um script `start_penpot.sh` para iniciar os serviços e abrir a interface no navegador.> Uma função `stop_penpot.sh` para desligar os serviços. Um arquivo `.desktop` que cria um ícone de aplicativo no menu, permitindo iniciar e parar o servidor Penpot com um clique, sem precisar usar o terminal.
+
 ---
 
 Se gostar de algo, deixa uma estrela aí. Cada script desses tem umas boas horas de pesquisa e raiva investidas, como se eu fosse um engenheiro da Acer tentando consertar os próprios produtos, mas sem receber nada em troca. =D
