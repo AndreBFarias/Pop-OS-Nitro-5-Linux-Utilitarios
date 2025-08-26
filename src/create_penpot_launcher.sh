@@ -1,21 +1,16 @@
-# DESCRIÇÃO
-# Este script automatiza a criação de um atalho de desktop (.desktop) para gerenciar
-# uma instância local do Penpot. Ele gera os scripts de controle (iniciar/parar),
-# cria o ícone de aplicativo e, se um arquivo 'icon.png' for encontrado,
-# o define como o ícone personalizado do atalho.
+#!/bin/bash
 
-# COMENTÁRIOS
+
 #1: Define dinamicamente o nome do usuário e os caminhos necessários.
 #2: Cria o script 'start_penpot.sh' dentro de '~/penpot-server'.
 #3: Cria o script 'stop_penpot.sh' no mesmo local.
 #4: Aplica permissões de execução aos scripts de controle.
 #5: Cria o arquivo 'penpot.desktop' no diretório de aplicativos do usuário.
-#6: **NOVA ETAPA**: Verifica se '~/penpot-server/icon.png' existe. Se existir,
-#   atualiza o arquivo .desktop para usar este ícone personalizado.
-#7: Informa ao usuário que a configuração foi concluída com sucesso.
+#6: Verifica se '~/penpot-server/icon.png' existe e o define como o ícone personalizado.
+#7: **NOVA ETAPA**: Executa 'update-desktop-database' para forçar o sistema a reconhecer o novo atalho e ícone imediatamente.
+#8: Informa ao usuário que a configuração foi concluída com sucesso.
 
-# CÓDIGO
-#!/bin/bash
+
 
 BLUE='\033[0;34m'
 GREEN='\033[0;32m'
@@ -35,7 +30,7 @@ if [ ! -d "$PENPOT_DIR" ]; then
 fi
 
 #2
-echo -e "\n${YELLOW}[1/5] Criando script de inicialização...${NC}"
+echo -e "\n${YELLOW}[1/6] Criando script de inicialização...${NC}"
 cat << EOF > "${PENPOT_DIR}/start_penpot.sh"
 #!/bin/bash
 cd "\$(dirname "\$0")"
@@ -45,7 +40,7 @@ xdg-open http://localhost:9001
 EOF
 
 #3
-echo -e "${YELLOW}[2/5] Criando script de parada...${NC}"
+echo -e "${YELLOW}[2/6] Criando script de parada...${NC}"
 cat << EOF > "${PENPOT_DIR}/stop_penpot.sh"
 #!/bin/bash
 cd "\$(dirname "\$0")"
@@ -53,11 +48,11 @@ docker compose -p penpot down
 EOF
 
 #4
-echo -e "${YELLOW}[3/5] Aplicando permissões de execução...${NC}"
+echo -e "${YELLOW}[3/6] Aplicando permissões de execução...${NC}"
 chmod +x "${PENPOT_DIR}/start_penpot.sh" "${PENPOT_DIR}/stop_penpot.sh"
 
 #5
-echo -e "${YELLOW}[4/5] Criando atalho no menu de aplicativos...${NC}"
+echo -e "${YELLOW}[4/6] Criando atalho no menu de aplicativos...${NC}"
 mkdir -p "${USER_HOME}/.local/share/applications"
 cat << EOF > "${USER_HOME}/.local/share/applications/penpot.desktop"
 [Desktop Entry]
@@ -77,7 +72,7 @@ Exec=${PENPOT_DIR}/stop_penpot.sh
 EOF
 
 #6
-echo -e "${YELLOW}[5/5] Verificando e aplicando ícone personalizado...${NC}"
+echo -e "${YELLOW}[5/6] Verificando e aplicando ícone personalizado...${NC}"
 ICON_FILE="${PENPOT_DIR}/icon.png"
 LAUNCHER_FILE="${USER_HOME}/.local/share/applications/penpot.desktop"
 if [ -f "$ICON_FILE" ]; then
@@ -88,8 +83,10 @@ else
 fi
 
 #7
-echo -e "\n${GREEN}=== ATALHO DO PENPOT CRIADO E CONFIGURADO COM SUCESSO ===${NC}"
-echo "Você agora pode encontrar e gerenciar o Penpot a partir do seu menu de aplicativos."
+echo -e "${YELLOW}[6/6] Atualizando o banco de dados de aplicativos...${NC}"
+update-desktop-database "${USER_HOME}/.local/share/applications"
 
-# CITAÇÃO
-# "A simplicidade é a alma da eficiência." - Austin Freeman
+#8
+echo -e "\n${GREEN}=== ATALHO DO PENPOT CRIADO E CONFIGURADO COM SUCESSO ===${NC}"
+echo "Você já pode encontrar o atalho (com o novo ícone, se disponível) no seu menu de aplicativos."
+ 
