@@ -9,7 +9,7 @@
   <h1 style="font-size: 2em;">Pop-OS-Nitro-5-Linux-Utilitarios</h1>
   <br> 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/AndreBFarias/Pop-OS-Nitro-5-Linux-Utilitarios/main/assets/acer-nitro.png" alt="Logo Acer Nitro" width="250">
+    <img src="https://raw.githubusercontent.com/AndreBFarias/Pop-OS-Nitro-5-Linux-Utilitarios/main/assets/acer-nitro.png" alt="Logo Acer Nitro" width="22%">
 </p></div>
 
 <br>
